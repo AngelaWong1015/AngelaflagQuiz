@@ -21,27 +21,27 @@ public class MainActivity extends AppCompatActivity {
         Button btnC = (Button) findViewById(R.id.buttonChina);
         final Button btnD = (Button) findViewById(R.id.buttonHK);
 
-        final TextView result=(TextView) findViewById(R.id.textViewResult;
+        final TextView result = (TextView) findViewById(R.id.textViewResult
 
                 btnA.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View v) {
                                                 result.setText("Incorrect");
-                                                btnA.setEnabled(false);
+                                                //btnA.setEnabled(false);
                                             }
                                         });
                 btnB.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View v) {
                                                 result.setText("Incorrect");
-                                                btnB.setEnabled(false);
+                                                //btnB.setEnabled(false);
                                             }
                                         });
                 btnC.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View v) {
                                                 result.setText("Incorrect");
-                                                btnC.setEnabled(false);
+                                                //btnC.setEnabled(false);
                                             }
                                         });
                 btnD.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         result.setText("Your answer is correct!");
                         Intent startQ2Activity = new Intent(v.getContext(), Q2.class);
-                        btnD.setEnabled(true);
+                        //btnD.setEnabled(true);
                     }
                 });
     }
